@@ -1,6 +1,6 @@
 @import url("../css/fonts.css");
 :root {
-  --clr-bgc: hsl(210, 36%, 96%);
+  --clr-bgc: linear-gradient(90deg,  #e08791 ,#d9bf98);
   --font-color: hsl(209, 61%, 16%);
   --clr-black: #222;
   --ff-primary: Lato, "Roboto", sans-serif;
@@ -88,53 +88,33 @@ p {
     line-height: 1;
   }
 }
-
-.section {
-  padding: 5rem 1rem;
-}
-
-/*  navigation */
-nav {
-  width: 100%;
-  font-family: var(--ff-primary);
-  line-height: 60px;
-  box-shadow: var(--dark-shadow);
+.header-info {
+  color: white !important;
+  padding-top: 5rem;
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.hambager {
-  display: inline-flex;
-}
-
-.hambager li {
-  display: none;
-  list-style-type: none;
-  margin-left: 1rem;
-}
-.nav-header ul li {
-  display: inline-block;
-  margin-left: 1.3rem;
-  height: 60px;
-}
-
-.nav-header ul li a {
-  color: var(--font-color);
-  transition: var(--transition);
-}
-.nav-header ul li a:hover {
-  background-color: var(--font-color);
-  color: snow;
-  padding: 6px 5px;
+.header-info .divider {
+  width: 15rem;
+  color: whitesmoke!important;
+  border-top: none;
+  margin: 2.2rem 0rem;
 }
 main {
   display: grid;
   place-content: center;
+  
 }
 .section {
+  background-color: white;
+  padding: 2rem 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 275px);
   grid-template-rows: repeat(5, 350px);
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   grid-template-areas:
     "img-1 img-1 img-2 img-3"
     "img-4 img-5 img-5 img-6"
@@ -286,4 +266,8 @@ button {
     " img-12" ;
     
   }
+}
+footer {
+  width: 100%;
+  margin-top: 5rem;
 }
